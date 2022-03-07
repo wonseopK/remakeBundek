@@ -24,8 +24,12 @@ public class Member {
     private LocalDate regDate;
 
     private String email2;
+<<<<<<< HEAD
     private String email23;
     private String email323;
 
 
+=======
+    private String email22131;
+>>>>>>> branch2
 }
