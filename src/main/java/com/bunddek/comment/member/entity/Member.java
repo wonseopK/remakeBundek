@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @NoArgsConstructor
 @Getter
@@ -14,8 +15,11 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
 
-    private String email;
+    private String name;
+
     private String password;
 
-    private String name;
+    private String email;
+
+    private LocalDate regDate;
 }
