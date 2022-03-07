@@ -27,4 +27,5 @@ public class Member {
     private String email22131;
     private String email2213sdfsd1;
     private String email2213sdfsd12;
+    private String sdfsemail2213sdfsd12;
 }
