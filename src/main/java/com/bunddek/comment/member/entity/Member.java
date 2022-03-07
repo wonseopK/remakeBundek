@@ -24,4 +24,6 @@ public class Member {
     private LocalDate regDate;
 
     private String email2;
+    private String email23;
+
 }
