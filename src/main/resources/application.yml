@@ -1,20 +1,24 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: Sa
+    url: jdbc:h2:tcp://localhost/~/bundek
+    username: sa
     password:
     driver-class-name: org.h2.Driver
 
-  h2:
-    console:
-      path: /h2-console
-      enabled: true
-
   jpa:
-    show-sql: true
+    hibernate:
+      ddl-auto: create
     properties:
       hibernate:
+        #        show_sql: true
         format_sql: true
-    hibernate:
-      ddl-auto: update
+        default_batch_fetch_size: 100
 
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
